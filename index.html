@@ -10,21 +10,206 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisy ui and tailwind css cdn link starts here// -->
      <!-- google font cdn link starts here// -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- google font cdn link ends here// -->
+    <!-- font awesome cdn link starts here// -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn link ends here// -->
     <link rel="stylesheet" href="style.css/style.css">
 </head>
 <body>
     <header>
-       
+     
+        <nav>
+        <div class="navbar bg-base-100 shadow-sm bg-[#15803D] px-10">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost text-white lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+        <a href="">About</a>
+     </li>
+     <li>
+        <a href="">Gallery</a>
+     </li>
+     <li>
+        <a href="">Plant a Tree</a>
+     </li>
+      </ul>
+    </div>
+    <a class="text-xl text-white font-semibold">Green Arth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+     <li>
+        <a class="font-semibold text-white text-[18px]" href="">About</a>
+     </li>
+     <li>
+        <a class="font-semibold text-white text-[18px]" href="">Gallery</a>
+     </li>
+     <li>
+        <a class="font-semibold text-white text-[18px]" href="">Plant a Tree</a>
+     </li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn bg-[#FACC15] rounded-3xl text-[#15803D]">Plant a Tree</a>
+  </div>
+</div>
+    <header>
+        </nav>
+        <!-- banner session starts here// -->
+         <div class="banner-continer">
+            <div class="banner bg-[#CFF0DC] flex items-center justify-between flex-col-reverse md:flex-row">
+                <div class="bannerleft">
+                    <img src="assets/hero-leaf1.png" alt="">
+                </div>
+                <div class="banner-content max-w-[627px] text-center">
+                    <h2 class="font-bold text-[48px]">Plant a Tree, Grow a Future</h2>
+                    <p>Join our mission to plant 1 million trees and make the Earth greener for futuregenerations.</p>
+                    <a class="btn bg-[#FACC15] rounded-3xl text-[#15803D]">Get Involved</a>
+                </div>
+                <div class="banner-right">
+                    <img class="" src="assets/hero-leaf2.png" alt="">
+                </div>
+            </div>
+         </div>
+        <!-- banner session ends here// -->
     </header>
     <main>
+      <section class="bg-[#F0FDF4] py-5">
+        <h1 class="text-center font-semibold text-[32px]">Choose Your Trees</h1>
+        <section class="w-11/12 gap-6  py-10 grid sm:grid-cols-12 md:grid-cols-12">
+          
+          <section id="catagoryContiner" class="catagories  col-span-2  p-5 it font-bold">
+            
+            
+          </section>
+          <section id="cardContiner" class="img  col-span-8 grid md:grid-cols-3 sm:grid-cols-1 gap-5">
+           <div>
+         
+           </div>
+           
+          </section>
+          <section   class="card col-span-2">
+            <div class="min-h-[50vh] bg-white p-2 ">
+              <h2>Your card</h2>
+              <div id="total" class="bg-[#F0FDF4] flex items-center justify-between">
+                
+                 <!-- <div class="">
+                  <h2>Name</h2>
+                  <p>120</p>
+                 </div>
+                 <div>
+                  <i class="fa-solid fa-xmark"></i>
+                 </div> -->
+                
+              </div>
+            </div>
+          </section>
+        </section>
 
+
+        <!-- campaign session starts here// -->
+         <section class="camping-banner-continer mt-10">
+        <h1 class="text-center font-semibold text-[32px]">About the Campaign</h1>
+        <section class="campaign-banner mt-7 max-w-[1020px] mx-auto gap-5 p-2 sm:flex md:flex-row items-center"
+           <div class="flex-1">
+            <img class="w-[530px]" src="assets/about.png" alt="">
+          </div>
+         <div class="flex-1">
+          <p class="text-[#1F2937]">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+          <ul class="mt-5 list-disc">
+            <li >Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+          </ul>
+         </div>
+        </section>
+      </section>
+      <!-- campaign session ends here// -->
+      </section>
+      <!-- Our Impact session starts here// -->
+       <section class="our-continer bg-[#CFF0DC] min-h-70 p-4">
+        <h1 class="text-center font-semibold text-[32px]">Our Impact</h1>
+        <section class="our-banner sm:flex md:flex-row justify-evenly mt-8">
+        <div class="card">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card-body">
+         
+           <div class="mx-auto py-6">
+            <h2 class="text-[30px] text-[#15803D] font-bold">500K+</h2>
+            <p>Trees Planted</p>
+          </div>
+          
+        </div>
+        </div>
+          </div>
+          </div>
+          <!-- card-2 srarts// -->
+
+          <div class="card">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card-body">
+          <div class="mx-auto py-6">
+            <h2 class="text-[30px] text-[#15803D] font-bold">120+</h2>
+            <p>Communities Involved</p>
+          </div>
+        </div>
+        </div>
+          </div>
+          </div>
+
+          <!-- card-2ends// -->
+          <!-- card-3starts// -->
+
+
+          <div class="card">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card-body">
+         
+          <div class="mx-auto py-6">
+            <h2 class="text-[30px] text-[#15803D] font-bold">30+</h2>
+            <p>Countries Reached</p>
+          </div>
+          
+        </div>
+        </div>
+          </div>
+          </div>
+
+          <!-- card-3 ends// -->
+        </section>
+       </section>
+       <!-- Our Impact session ends here// -->
     </main>
     <footer>
 
     </footer>
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal" class="space-y-3">
+      
+      
+   
+    </div>
+    
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    <script src="Earth.js/script.js"></script>
 </body>
 </html>
