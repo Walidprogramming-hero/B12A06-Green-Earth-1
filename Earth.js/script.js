@@ -177,36 +177,31 @@ show.forEach(create => {
 allCardShow()
 
 
-
-// document.getElementById('clickButton').addEventListener('click', () => {
-//   console.log('clickhere')
-// })
+let total = 0;
 
 document.getElementById('cardContiner').addEventListener('click', (e) => {
   if (e.target.classList.contains('clickButton')) {
-   const price = e.target.closest('.card').querySelector('.price')
-    // const number = parseInt(price.innerText.replace(/[^\d]/g, ""))
-    // console.log(number)
-    const number = parseInt(price.innerText)
-   
-    console.log(number)
-   const nam= e.target.closest('.card').querySelector('.num').innerHTML
-    console.log(nam)
-   
+    const card = e.target.closest('.card');
+    const name = card.querySelector('.num').innerText;
+    const price = parseInt(card.querySelector('.price').innerText);
+
+    
+    const cartContainer = document.getElementById('carrtContainer');
+    const item = document.createElement('p');
+    item.innerText = `${name} - ${price} Tk`;
+    cartContainer.appendChild(item);
+
+    
+    total += price;
+    document.getElementById('totalPrice').innerText = total;
   }
 });
 
-
-
-
-  
-  
-  
-
-
-
-
-
+document.getElementById('tuech').addEventListener('click', () => {
+  total = 0;
+   document.getElementById('totalPrice').innerText = total;
+  document.getElementById('carrtContainer').innerHTML = '';
+})
 
 
 

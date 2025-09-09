@@ -91,25 +91,19 @@
             
             
           </section>
-          <section id="cardContiner" class="img  col-span-8 grid md:grid-cols-3 sm:grid-cols-1 gap-5">
+          <section id="cardContiner" class="img mx-auto col-span-8 grid md:grid-cols-3 sm:grid-cols-1 gap-5">
            <div>
          
            </div>
            
           </section>
           <section   class="card col-span-2">
-            <div class="min-h-[50vh] bg-white p-2 ">
-              <h2>Your card</h2>
-              <div id="total" class="bg-[#F0FDF4] flex items-center justify-between">
-                
-                 <!-- <div class="">
-                  <h2>Name</h2>
-                  <p>120</p>
+            <div class="min-h-[50vh] bg-white p-2">
+              <div class="flex justify-between"><h2 class="font-bold text-[25px]">Your card</h2> <button id="tuech" class="cursor-pointer"><i class="fa-solid fa-xmark"></i></button></div>
+              <div id="carrtContainer" class="bg-[#CFF0DC] p-3"></div>
+                <h2>Total: <span id="totalPrice">0</span></h2>
                  </div>
-                 <div>
-                  <i class="fa-solid fa-xmark"></i>
-                 </div> -->
-                
+
               </div>
             </div>
           </section>
@@ -139,12 +133,13 @@
        <section class="our-continer bg-[#CFF0DC] min-h-70 p-4">
         <h1 class="text-center font-semibold text-[32px]">Our Impact</h1>
         <section class="our-banner sm:flex md:flex-row justify-evenly mt-8">
+          <!-- card-1// -->
         <div class="card">
-        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto hover:bg-[#F0FDF4] shadow-xl hover:scale-105 transition-colors duration-300">
         <div class="card-body">
          
            <div class="mx-auto py-6">
-            <h2 class="text-[30px] text-[#15803D] font-bold">500K+</h2>
+            <h2 class="text-[30px] text-center text-[#15803D] font-bold">500K+</h2>
             <p>Trees Planted</p>
           </div>
           
@@ -155,10 +150,10 @@
           <!-- card-2 srarts// -->
 
           <div class="card">
-        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto hover:bg-[#F0FDF4] shadow-xl hover:scale-105 transition-colors duration-300">
         <div class="card-body">
           <div class="mx-auto py-6">
-            <h2 class="text-[30px] text-[#15803D] font-bold">120+</h2>
+            <h2 class="text-[30px] text-[#15803D] font-bold text-center">120+</h2>
             <p>Communities Involved</p>
           </div>
         </div>
@@ -171,11 +166,11 @@
 
 
           <div class="card">
-        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm mx-auto hover:bg-[#F0FDF4] shadow-xl hover:scale-105 transition-colors duration-300">
         <div class="card-body">
          
           <div class="mx-auto py-6">
-            <h2 class="text-[30px] text-[#15803D] font-bold">30+</h2>
+            <h2 class="text-[30px] text-[#15803D] font-bold text-center">30+</h2>
             <p>Countries Reached</p>
           </div>
           
@@ -189,9 +184,7 @@
        </section>
        <!-- Our Impact session ends here// -->
     </main>
-    <footer>
-
-    </footer>
+    
     <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
